@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from "./FuttonFunc";
+import { Dropdown } from "./Dropdown";
+import { TodoList } from "./TodoList";
 
 function App() {
+  const html = `<div><p>Lorem ipsum dolor sit amet</p></div>`
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="1234" title={123 * 10 / 2} tabIndex="0" data-test={123} aria-atomic={123}>
+      {/*<Dropdown />*/}
+      {/*<div dangerouslySetInnerHTML={{__html: html}} />*/}
+      <TodoList />
     </div>
   );
 }
